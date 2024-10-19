@@ -12,7 +12,8 @@
       "@styles/*": ["src/styles/*"],
       "@assets/*": ["src/assets/*"],
       "@icons/*": ["src/assets/icons/*"],
-      "@images/*": ["src/assets/images/*"]
+      "@images/*": ["src/assets/images/*"],
+      "@constants/*": ["src/constants/*"]
     },
     "types": ["vite-plugin-svgr/client"],
 

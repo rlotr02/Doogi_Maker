@@ -1,5 +1,14 @@
-/* :root {
-} */
+@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+:root {
+  --Logo: #76c5d7;
+  --Icon: #a1d0da;
+  --Text: #62a4b2;
+  --Default: #3d3d3d;
+  --H1: 700 40px / normal gorditas;
+  --H5: 400 20px / normal Poor Story;
+}
 
 html,
 body,
