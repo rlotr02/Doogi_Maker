@@ -1,7 +1,7 @@
 export type TNavigationBarItem = {
   id: number;
   text: string;
-  image: string;
+  image: TNavigationBarItemImage;
 };
 
 export type TSelectedImage = {
@@ -15,3 +15,5 @@ export type TSelectedImage = {
   shoes: number;
   background: number;
 };
+
+export type TNavigationBarItemImage = keyof TSelectedImage;

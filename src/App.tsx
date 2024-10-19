@@ -1,12 +1,14 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '@components/Header';
 import ImageContainer from '@components/ImageContainer';
 import Tap from '@components/Tap';
 import TapContainer from '@components/TapContainer';
 import { TSelectedImage } from '@/types/ImageType';
+import { ImageItem } from './constants/ImageItem';
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [selectedBar, setSelectedBar] = useState(0);
   const [selectedImage, setSelectedImage] = useState<TSelectedImage>({
     body: 0,
@@ -20,17 +22,51 @@ const App = () => {
     background: 0,
   });
 
+  useEffect(() => {
+    const preloadImages = () => {
+      const totalImages = ImageItem.flat().length;
+      let loadedImages = 0;
+
+      ImageItem.flat().forEach(src => {
+        const img = new Image();
+        img.src = src;
+        img.onload = () => {
+          loadedImages += 1;
+          if (loadedImages === totalImages) {
+            setIsLoading(false);
+          }
+        };
+      });
+    };
+
+    preloadImages();
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="loading">
+        <h1>Loading...</h1>
+      </div>
+    );
+  }
+
   return (
-    <div>
-      <Header />
-      <ImageContainer selectedImage={selectedImage} />
-      <Tap selectedBar={selectedBar} setSelectedBar={setSelectedBar} />
-      <TapContainer
-        selectedBar={selectedBar}
-        selectedImage={selectedImage}
-        setSelectedImage={setSelectedImage}
-      />
-    </div>
+    <>
+      {isLoading ? (
+        <></>
+      ) : (
+        <>
+          <Header />
+          <ImageContainer selectedImage={selectedImage} />
+          <Tap selectedBar={selectedBar} setSelectedBar={setSelectedBar} />
+          <TapContainer
+            selectedBar={selectedBar}
+            selectedImage={selectedImage}
+            setSelectedImage={setSelectedImage}
+          />
+        </>
+      )}
+    </>
   );
 };
 
