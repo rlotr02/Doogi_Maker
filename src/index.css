@@ -7,6 +7,7 @@
   --Text: #62a4b2;
   --Default: #3d3d3d;
   --H1: 700 40px / normal gorditas;
+  --H4: 400 25px / normal Poor Story;
   --H5: 400 20px / normal Poor Story;
 }
 
@@ -106,6 +107,7 @@ body {
   padding: 0;
   background-color: #fff;
   font-size: 100%;
+  overflow: hidden;
 }
 
 html,

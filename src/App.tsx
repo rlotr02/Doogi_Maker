@@ -6,6 +6,7 @@ import Tap from '@components/Tap';
 import TapContainer from '@components/TapContainer';
 import { TSelectedImage } from '@/types/ImageType';
 import { ImageItem } from './constants/ImageItem';
+import Loading from './components/Loading';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -45,9 +46,11 @@ const App = () => {
   return (
     <>
       {isLoading ? (
-        <div>로딩창</div>
+        <Loading />
       ) : (
-        <>
+        <div
+          style={{ display: 'flex', flexDirection: 'column', height: '100dvh' }}
+        >
           <Header />
           <ImageContainer selectedImage={selectedImage} />
           <Tap selectedBar={selectedBar} setSelectedBar={setSelectedBar} />
@@ -56,7 +59,7 @@ const App = () => {
             selectedImage={selectedImage}
             setSelectedImage={setSelectedImage}
           />
-        </>
+        </div>
       )}
     </>
   );

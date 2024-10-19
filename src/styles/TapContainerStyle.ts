@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const ScrollContainer = styled.div`
+  overflow-y: auto;
+  flex: 1;
+`;
+
 export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);

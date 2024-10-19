@@ -14,52 +14,54 @@ const TapContainer = ({
   setSelectedImage: React.Dispatch<React.SetStateAction<TSelectedImage>>;
 }) => {
   return (
-    <S.Container>
-      {ImageItem[selectedBar].map((data, index) => {
-        const imageKey = NavigationBarItem[selectedBar].image;
-        const isSelected = selectedImage[imageKey] === index;
+    <S.ScrollContainer>
+      <S.Container>
+        {ImageItem[selectedBar].map((data, index) => {
+          const imageKey = NavigationBarItem[selectedBar].image;
+          const isSelected = selectedImage[imageKey] === index;
 
-        return (
-          <S.ImageWrap
-            key={index}
-            onClick={() =>
-              setSelectedImage(prevState => ({
-                ...prevState,
-                [NavigationBarItem[selectedBar].image]: index,
-              }))
-            }
-            $selected={isSelected}
-          >
-            {index === 0 && selectedBar !== 8 ? (
-              <CancelIcon
-                color={isSelected ? 'var(--Icon)' : 'var(--Default)'}
-              />
-            ) : (
-              <div
-                style={{
-                  position: 'relative',
-                  width: '100%',
-                  paddingTop: '100%',
-                }}
-              >
-                <img
-                  src={data}
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    borderRadius: isSelected ? 8 : 8.5,
-                  }}
+          return (
+            <S.ImageWrap
+              key={index}
+              onClick={() =>
+                setSelectedImage(prevState => ({
+                  ...prevState,
+                  [NavigationBarItem[selectedBar].image]: index,
+                }))
+              }
+              $selected={isSelected}
+            >
+              {index === 0 && selectedBar !== 8 ? (
+                <CancelIcon
+                  color={isSelected ? 'var(--Icon)' : 'var(--Default)'}
                 />
-              </div>
-            )}
-          </S.ImageWrap>
-        );
-      })}
-    </S.Container>
+              ) : (
+                <div
+                  style={{
+                    position: 'relative',
+                    width: '100%',
+                    paddingTop: '100%',
+                  }}
+                >
+                  <img
+                    src={data}
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      borderRadius: isSelected ? 8 : 8.5,
+                    }}
+                  />
+                </div>
+              )}
+            </S.ImageWrap>
+          );
+        })}
+      </S.Container>
+    </S.ScrollContainer>
   );
 };
 
