@@ -3,6 +3,7 @@ import { ImageItem } from '@/constants/ImageItem';
 import { NavigationBarItem } from '@/constants/NavigationBarItem';
 import { TSelectedImage } from '@/types/ImageType';
 import CancelIcon from '@icons/cancel.svg?react';
+import { useEffect, useRef } from 'react';
 
 const TapContainer = ({
   selectedBar,
@@ -13,8 +14,17 @@ const TapContainer = ({
   selectedImage: TSelectedImage;
   setSelectedImage: React.Dispatch<React.SetStateAction<TSelectedImage>>;
 }) => {
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+
+  //자동 스크롤
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [selectedBar]);
+
   return (
-    <S.ScrollContainer>
+    <S.ScrollContainer ref={scrollContainerRef}>
       <S.Container>
         {ImageItem[selectedBar].map((data, index) => {
           const imageKey = NavigationBarItem[selectedBar].image;
