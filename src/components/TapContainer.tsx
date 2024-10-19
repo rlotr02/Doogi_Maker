@@ -23,17 +23,19 @@ const TapContainer = ({
           return (
             <S.ImageWrap
               key={index}
-              onClick={() =>
+              onClick={() => {
+                const newIndex = selectedImage[imageKey] === index ? 0 : index;
+
                 setSelectedImage(prevState => ({
                   ...prevState,
-                  [NavigationBarItem[selectedBar].image]: index,
-                }))
-              }
+                  [NavigationBarItem[selectedBar].image]: newIndex,
+                }));
+              }}
               $selected={isSelected}
             >
               {index === 0 && selectedBar !== 8 ? (
                 <CancelIcon
-                  color={isSelected ? 'var(--Icon)' : 'var(--Default)'}
+                  color={isSelected ? 'var(--Icon)' : 'var(--IconDefault)'}
                 />
               ) : (
                 <div
