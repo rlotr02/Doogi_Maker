@@ -22,8 +22,8 @@ const ImageContainer = ({
         <img src={ImageItem[2][selectedImage.mouth]} />
         <img src={ImageItem[7][selectedImage.shoes]} />
         <img src={ImageItem[6][selectedImage.clothes]} />
-        <img src={ImageItem[4][selectedImage.handDress]} />
-        <img src={ImageItem[5][selectedImage.headDress]} />
+        <img src={ImageItem[4][selectedImage.headDress]} />
+        <img src={ImageItem[5][selectedImage.handDress]} />
       </S.ImageWrap>
       <S.RightWrap>
         <S.IconWrap>

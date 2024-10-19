@@ -42,18 +42,10 @@ const App = () => {
     preloadImages();
   }, []);
 
-  if (isLoading) {
-    return (
-      <div className="loading">
-        <h1>Loading...</h1>
-      </div>
-    );
-  }
-
   return (
     <>
       {isLoading ? (
-        <></>
+        <div>로딩창</div>
       ) : (
         <>
           <Header />
