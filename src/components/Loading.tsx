@@ -1,3 +1,4 @@
+import * as S from '@styles/LoadingStyle';
 import Image1 from '@images/loading/1.png';
 import Image2 from '@images/loading/2.png';
 import Image3 from '@images/loading/3.png';
@@ -13,22 +14,10 @@ const Loading = () => {
   const randomImage = images[Math.floor(Math.random() * images.length)];
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '90dvh',
-      }}
-    >
+    <S.Container>
       <img src={randomImage} width={150} height={150} />
-      <h5
-        style={{ font: 'var(--H4)', color: 'var(--Default)', paddingLeft: 5 }}
-      >
-        LOADING...
-      </h5>
-    </div>
+      <h5>LOADING...</h5>
+    </S.Container>
   );
 };
 
