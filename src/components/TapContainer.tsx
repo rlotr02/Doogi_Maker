@@ -30,7 +30,7 @@ const TapContainer = ({
             }
             $selected={isSelected}
           >
-            {data === '/src/assets/images/parts/None.png' ? (
+            {index === 0 && selectedBar !== 8 ? (
               <CancelIcon
                 color={isSelected ? 'var(--Icon)' : 'var(--Default)'}
               />
