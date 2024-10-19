@@ -7,6 +7,8 @@ import TapContainer from '@components/TapContainer';
 import { TSelectedImage } from '@/types/ImageType';
 import { ImageItem } from './constants/ImageItem';
 import Loading from './components/Loading';
+import KakaoAdfitLeft from './components/adfit/KakaoAdfitLeft';
+import KakaoAdfitRight from './components/adfit/KakaoAdfitRight';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -48,17 +50,23 @@ const App = () => {
       {isLoading ? (
         <Loading />
       ) : (
-        <div
-          style={{ display: 'flex', flexDirection: 'column', height: '100dvh' }}
-        >
-          <Header />
-          <ImageContainer selectedImage={selectedImage} />
-          <Tap selectedBar={selectedBar} setSelectedBar={setSelectedBar} />
-          <TapContainer
-            selectedBar={selectedBar}
-            selectedImage={selectedImage}
-            setSelectedImage={setSelectedImage}
-          />
+        <div className="div-wrapper">
+          <div className="ad-wrapper">
+            <KakaoAdfitLeft />
+          </div>
+          <div className="main-wrapper">
+            <Header />
+            <ImageContainer selectedImage={selectedImage} />
+            <Tap selectedBar={selectedBar} setSelectedBar={setSelectedBar} />
+            <TapContainer
+              selectedBar={selectedBar}
+              selectedImage={selectedImage}
+              setSelectedImage={setSelectedImage}
+            />
+          </div>
+          <div className="ad-wrapper">
+            <KakaoAdfitRight />
+          </div>
         </div>
       )}
     </>

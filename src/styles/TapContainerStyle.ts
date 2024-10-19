@@ -9,7 +9,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-  margin: 15px;
+  margin: 8px 15px 15px;
 `;
 
 export const ImageWrap = styled.div<{ $selected: boolean }>`
