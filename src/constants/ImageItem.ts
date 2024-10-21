@@ -50,6 +50,9 @@ import HeadDressImage6 from '@images/parts/headDress/6.png';
 import HeadDressImage7 from '@images/parts/headDress/7.png';
 import HeadDressImage8 from '@images/parts/headDress/8.png';
 import HeadDressImage9 from '@images/parts/headDress/9.png';
+import HeadDressImage10 from '@images/parts/headDress/10.png';
+import HeadDressImage11 from '@images/parts/headDress/11.png';
+import HeadDressImage12 from '@images/parts/headDress/12.png';
 
 import HandDressImage1 from '@images/parts/handDress/1.png';
 import HandDressImage2 from '@images/parts/handDress/2.png';
@@ -183,6 +186,9 @@ export const ImageItem = [
     HeadDressImage7,
     HeadDressImage8,
     HeadDressImage9,
+    HeadDressImage10,
+    HeadDressImage11,
+    HeadDressImage12,
   ],
   [
     NoneImage,
