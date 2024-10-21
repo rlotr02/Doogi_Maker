@@ -26,7 +26,6 @@ const TapContainer = ({
 
   return (
     <S.ScrollContainer ref={scrollContainerRef}>
-      <div style={{ height: 15 }}></div>
       <KakaoAdfitBottom />
       <S.Container>
         {ImageItem[selectedBar].map((data, index) => {
