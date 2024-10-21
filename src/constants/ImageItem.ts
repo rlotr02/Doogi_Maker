@@ -24,6 +24,7 @@ import EyesImage8 from '@images/parts/eyes/8.png';
 import EyesImage9 from '@images/parts/eyes/9.png';
 import EyesImage10 from '@images/parts/eyes/10.png';
 import EyesImage11 from '@images/parts/eyes/11.png';
+import EyesImage12 from '@images/parts/eyes/12.png';
 
 import MouthImage1 from '@images/parts/mouth/1.png';
 import MouthImage2 from '@images/parts/mouth/2.png';
@@ -35,12 +36,14 @@ import MouthImage7 from '@images/parts/mouth/7.png';
 import MouthImage8 from '@images/parts/mouth/8.png';
 import MouthImage9 from '@images/parts/mouth/9.png';
 import MouthImage10 from '@images/parts/mouth/10.png';
+import MouthImage11 from '@images/parts/mouth/11.png';
 
 import FaceDressImage1 from '@images/parts/faceDress/1.png';
 import FaceDressImage2 from '@images/parts/faceDress/2.png';
 import FaceDressImage3 from '@images/parts/faceDress/3.png';
 import FaceDressImage4 from '@images/parts/faceDress/4.png';
 import FaceDressImage5 from '@images/parts/faceDress/5.png';
+import FaceDressImage6 from '@images/parts/faceDress/6.png';
 
 import HeadDressImage1 from '@images/parts/headDress/1.png';
 import HeadDressImage2 from '@images/parts/headDress/2.png';
@@ -179,6 +182,7 @@ export const ImageItem = [
     EyesImage9,
     EyesImage10,
     EyesImage11,
+    EyesImage12,
   ],
   [
     NoneImage,
@@ -192,6 +196,7 @@ export const ImageItem = [
     MouthImage8,
     MouthImage9,
     MouthImage10,
+    MouthImage11,
   ],
   [
     NoneImage,
@@ -200,6 +205,7 @@ export const ImageItem = [
     FaceDressImage3,
     FaceDressImage4,
     FaceDressImage5,
+    FaceDressImage6,
   ],
   [
     NoneImage,
