@@ -33,8 +33,8 @@ const ImageContainer = ({
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
 
-    canvas.width = 2048;
-    canvas.height = 2048;
+    canvas.width = 1000;
+    canvas.height = 1000;
 
     const loadImages = images.map(src => {
       return new Promise<HTMLImageElement>((resolve, reject) => {
