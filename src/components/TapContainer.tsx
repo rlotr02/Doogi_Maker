@@ -45,7 +45,7 @@ const TapContainer = ({
               }}
               $selected={isSelected}
             >
-              {index === 0 && selectedBar !== 8 ? (
+              {index === 0 ? (
                 <CancelIcon
                   color={isSelected ? 'var(--Icon)' : 'var(--IconDefault)'}
                 />

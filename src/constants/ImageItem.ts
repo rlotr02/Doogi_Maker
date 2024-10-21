@@ -99,6 +99,21 @@ import BackgroundImage5 from '@images/parts/background/5.png';
 import BackgroundImage6 from '@images/parts/background/6.png';
 import BackgroundImage7 from '@images/parts/background/7.png';
 import BackgroundImage8 from '@images/parts/background/8.png';
+import BackgroundImage9 from '@images/parts/background/9.png';
+import BackgroundImage10 from '@images/parts/background/10.png';
+import BackgroundImage11 from '@images/parts/background/11.png';
+import BackgroundImage12 from '@images/parts/background/12.png';
+import BackgroundImage13 from '@images/parts/background/13.png';
+import BackgroundImage14 from '@images/parts/background/14.png';
+import BackgroundImage15 from '@images/parts/background/15.png';
+import BackgroundImage16 from '@images/parts/background/16.png';
+import BackgroundImage17 from '@images/parts/background/17.png';
+import BackgroundImage18 from '@images/parts/background/18.png';
+import BackgroundImage19 from '@images/parts/background/19.png';
+import BackgroundImage20 from '@images/parts/background/20.png';
+import BackgroundImage21 from '@images/parts/background/21.png';
+import BackgroundImage22 from '@images/parts/background/22.png';
+import BackgroundImage23 from '@images/parts/background/23.png';
 
 export const ImageItem = [
   [
@@ -209,6 +224,7 @@ export const ImageItem = [
     ShoesImage12,
   ],
   [
+    NoneImage,
     BackgroundImage1,
     BackgroundImage2,
     BackgroundImage3,
@@ -217,5 +233,20 @@ export const ImageItem = [
     BackgroundImage6,
     BackgroundImage7,
     BackgroundImage8,
+    BackgroundImage9,
+    BackgroundImage10,
+    BackgroundImage11,
+    BackgroundImage12,
+    BackgroundImage13,
+    BackgroundImage14,
+    BackgroundImage15,
+    BackgroundImage16,
+    BackgroundImage17,
+    BackgroundImage18,
+    BackgroundImage19,
+    BackgroundImage20,
+    BackgroundImage21,
+    BackgroundImage22,
+    BackgroundImage23,
   ],
 ];
