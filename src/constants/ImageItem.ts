@@ -85,6 +85,25 @@ import ClothesImage11 from '@images/parts/clothes/11.png';
 import ClothesImage12 from '@images/parts/clothes/12.png';
 import ClothesImage13 from '@images/parts/clothes/13.png';
 import ClothesImage14 from '@images/parts/clothes/14.png';
+import ClothesImage15 from '@images/parts/clothes/15.png';
+import ClothesImage16 from '@images/parts/clothes/16.png';
+import ClothesImage17 from '@images/parts/clothes/17.png';
+import ClothesImage18 from '@images/parts/clothes/18.png';
+import ClothesImage19 from '@images/parts/clothes/19.png';
+import ClothesImage20 from '@images/parts/clothes/20.png';
+import ClothesImage21 from '@images/parts/clothes/21.png';
+import ClothesImage22 from '@images/parts/clothes/22.png';
+import ClothesImage23 from '@images/parts/clothes/23.png';
+import ClothesImage24 from '@images/parts/clothes/24.png';
+import ClothesImage25 from '@images/parts/clothes/25.png';
+import ClothesImage26 from '@images/parts/clothes/26.png';
+import ClothesImage27 from '@images/parts/clothes/27.png';
+import ClothesImage28 from '@images/parts/clothes/28.png';
+import ClothesImage29 from '@images/parts/clothes/29.png';
+import ClothesImage30 from '@images/parts/clothes/30.png';
+import ClothesImage31 from '@images/parts/clothes/31.png';
+import ClothesImage32 from '@images/parts/clothes/32.png';
+import ClothesImage33 from '@images/parts/clothes/33.png';
 
 import ShoesImage1 from '@images/parts/shoes/1.png';
 import ShoesImage2 from '@images/parts/shoes/2.png';
@@ -230,6 +249,25 @@ export const ImageItem = [
     ClothesImage12,
     ClothesImage13,
     ClothesImage14,
+    ClothesImage15,
+    ClothesImage16,
+    ClothesImage17,
+    ClothesImage18,
+    ClothesImage19,
+    ClothesImage20,
+    ClothesImage21,
+    ClothesImage22,
+    ClothesImage23,
+    ClothesImage24,
+    ClothesImage25,
+    ClothesImage26,
+    ClothesImage27,
+    ClothesImage28,
+    ClothesImage29,
+    ClothesImage30,
+    ClothesImage31,
+    ClothesImage32,
+    ClothesImage33,
   ],
   [
     NoneImage,
