@@ -90,6 +90,13 @@ import ShoesImage9 from '@images/parts/shoes/9.png';
 import ShoesImage10 from '@images/parts/shoes/10.png';
 import ShoesImage11 from '@images/parts/shoes/11.png';
 import ShoesImage12 from '@images/parts/shoes/12.png';
+import ShoesImage13 from '@images/parts/shoes/13.png';
+import ShoesImage14 from '@images/parts/shoes/14.png';
+import ShoesImage15 from '@images/parts/shoes/15.png';
+import ShoesImage16 from '@images/parts/shoes/16.png';
+import ShoesImage17 from '@images/parts/shoes/17.png';
+import ShoesImage18 from '@images/parts/shoes/18.png';
+import ShoesImage19 from '@images/parts/shoes/19.png';
 
 import BackgroundImage1 from '@images/parts/background/1.png';
 import BackgroundImage2 from '@images/parts/background/2.png';
@@ -222,6 +229,13 @@ export const ImageItem = [
     ShoesImage10,
     ShoesImage11,
     ShoesImage12,
+    ShoesImage13,
+    ShoesImage14,
+    ShoesImage15,
+    ShoesImage16,
+    ShoesImage17,
+    ShoesImage18,
+    ShoesImage19,
   ],
   [
     NoneImage,
