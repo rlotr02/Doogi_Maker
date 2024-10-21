@@ -4,7 +4,7 @@ import { NavigationBarItem } from '@/constants/NavigationBarItem';
 import { TSelectedImage } from '@/types/ImageType';
 import CancelIcon from '@icons/cancel.svg?react';
 import { useEffect, useRef } from 'react';
-import KakaoAdfitBottom from './adfit/KakaoAdfitBottom';
+//import KakaoAdfitBottom from './adfit/KakaoAdfitBottom';
 
 const TapContainer = ({
   selectedBar,
@@ -26,7 +26,7 @@ const TapContainer = ({
 
   return (
     <S.ScrollContainer ref={scrollContainerRef}>
-      <KakaoAdfitBottom />
+      {/* <KakaoAdfitBottom /> */}
       <S.Container>
         {ImageItem[selectedBar].map((data, index) => {
           const imageKey = NavigationBarItem[selectedBar].image;
