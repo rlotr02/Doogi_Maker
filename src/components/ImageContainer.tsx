@@ -1,7 +1,7 @@
 import * as S from '@/styles/ImageContainerStyle';
 import GithubIcon from '@icons/github.svg?react';
 import InstagramIcon from '@icons/instagram.svg?react';
-import TistoryIcon from '@icons/tistory.svg?react';
+import HomeIcon from '@icons/home.svg?react';
 import LinkIcon from '@icons/link.svg?react';
 import DownloadIcon from '@icons/download.svg?react';
 import { TSelectedImage } from '@/types/ImageType';
@@ -77,20 +77,18 @@ const ImageContainer = ({
       </S.ImageWrap>
       <S.RightWrap>
         <S.IconWrap>
-          <GithubIcon
-            onClick={() => window.open('https://github.com/rlotr02', '_blank')}
-          />
-          <InstagramIcon
+          <HomeIcon
             onClick={() =>
-              window.open('https://www.instagram.com/rlotr.dev', '_blank')
+              window.open('https://www.instagram.com/doogi_official')
             }
           />
-          <TistoryIcon
-            onClick={() => window.open('https://rlotr.tistory.com', '_blank')}
+          <GithubIcon
+            onClick={() => window.open('https://github.com/rlotr02')}
           />
-          <LinkIcon
-            onClick={() => window.open('https://litt.ly/rlotr02', '_blank')}
+          <InstagramIcon
+            onClick={() => window.open('https://www.instagram.com/rlotr.dev')}
           />
+          <LinkIcon onClick={() => window.open('https://litt.ly/rlotr02')} />
         </S.IconWrap>
         <DownloadIcon
           style={{ marginBottom: 3, cursor: 'pointer' }}
