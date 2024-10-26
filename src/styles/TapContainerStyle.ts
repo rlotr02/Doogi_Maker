@@ -24,5 +24,6 @@ export const ImageWrap = styled.div<{ $selected: boolean }>`
   svg {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 `;
