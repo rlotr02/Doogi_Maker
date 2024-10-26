@@ -25,6 +25,10 @@ import EyesImage9 from '@images/parts/eyes/9.png';
 import EyesImage10 from '@images/parts/eyes/10.png';
 import EyesImage11 from '@images/parts/eyes/11.png';
 import EyesImage12 from '@images/parts/eyes/12.png';
+import EyesImage13 from '@images/parts/eyes/13.png';
+import EyesImage14 from '@images/parts/eyes/14.png';
+import EyesImage15 from '@images/parts/eyes/15.png';
+import EyesImage16 from '@images/parts/eyes/16.png';
 
 import MouthImage1 from '@images/parts/mouth/1.png';
 import MouthImage2 from '@images/parts/mouth/2.png';
@@ -37,6 +41,17 @@ import MouthImage8 from '@images/parts/mouth/8.png';
 import MouthImage9 from '@images/parts/mouth/9.png';
 import MouthImage10 from '@images/parts/mouth/10.png';
 import MouthImage11 from '@images/parts/mouth/11.png';
+import MouthImage12 from '@images/parts/mouth/12.png';
+import MouthImage13 from '@images/parts/mouth/13.png';
+import MouthImage14 from '@images/parts/mouth/14.png';
+import MouthImage15 from '@images/parts/mouth/15.png';
+import MouthImage16 from '@images/parts/mouth/16.png';
+import MouthImage17 from '@images/parts/mouth/17.png';
+import MouthImage18 from '@images/parts/mouth/18.png';
+import MouthImage19 from '@images/parts/mouth/19.png';
+import MouthImage20 from '@images/parts/mouth/20.png';
+import MouthImage21 from '@images/parts/mouth/21.png';
+import MouthImage22 from '@images/parts/mouth/22.png';
 
 import FaceDressImage1 from '@images/parts/faceDress/1.png';
 import FaceDressImage2 from '@images/parts/faceDress/2.png';
@@ -57,6 +72,14 @@ import HeadDressImage9 from '@images/parts/headDress/9.png';
 import HeadDressImage10 from '@images/parts/headDress/10.png';
 import HeadDressImage11 from '@images/parts/headDress/11.png';
 import HeadDressImage12 from '@images/parts/headDress/12.png';
+import HeadDressImage13 from '@images/parts/headDress/13.png';
+import HeadDressImage14 from '@images/parts/headDress/14.png';
+import HeadDressImage15 from '@images/parts/headDress/15.png';
+import HeadDressImage16 from '@images/parts/headDress/16.png';
+import HeadDressImage17 from '@images/parts/headDress/17.png';
+import HeadDressImage18 from '@images/parts/headDress/18.png';
+import HeadDressImage19 from '@images/parts/headDress/19.png';
+import HeadDressImage20 from '@images/parts/headDress/20.png';
 
 import HandDressImage1 from '@images/parts/handDress/1.png';
 import HandDressImage2 from '@images/parts/handDress/2.png';
@@ -74,6 +97,11 @@ import HandDressImage13 from '@images/parts/handDress/13.png';
 import HandDressImage14 from '@images/parts/handDress/14.png';
 import HandDressImage15 from '@images/parts/handDress/15.png';
 import HandDressImage16 from '@images/parts/handDress/16.png';
+import HandDressImage17 from '@images/parts/handDress/17.png';
+import HandDressImage18 from '@images/parts/handDress/18.png';
+import HandDressImage19 from '@images/parts/handDress/19.png';
+import HandDressImage20 from '@images/parts/handDress/20.png';
+import HandDressImage21 from '@images/parts/handDress/21.png';
 
 import ClothesImage1 from '@images/parts/clothes/1.png';
 import ClothesImage2 from '@images/parts/clothes/2.png';
@@ -108,6 +136,7 @@ import ClothesImage30 from '@images/parts/clothes/30.png';
 import ClothesImage31 from '@images/parts/clothes/31.png';
 import ClothesImage32 from '@images/parts/clothes/32.png';
 import ClothesImage33 from '@images/parts/clothes/33.png';
+import ClothesImage34 from '@images/parts/clothes/34.png';
 
 import ShoesImage1 from '@images/parts/shoes/1.png';
 import ShoesImage2 from '@images/parts/shoes/2.png';
@@ -146,12 +175,6 @@ import BackgroundImage14 from '@images/parts/background/14.png';
 import BackgroundImage15 from '@images/parts/background/15.png';
 import BackgroundImage16 from '@images/parts/background/16.png';
 import BackgroundImage17 from '@images/parts/background/17.png';
-import BackgroundImage18 from '@images/parts/background/18.png';
-import BackgroundImage19 from '@images/parts/background/19.png';
-import BackgroundImage20 from '@images/parts/background/20.png';
-import BackgroundImage21 from '@images/parts/background/21.png';
-import BackgroundImage22 from '@images/parts/background/22.png';
-import BackgroundImage23 from '@images/parts/background/23.png';
 
 export const ImageItem = [
   [
@@ -183,6 +206,10 @@ export const ImageItem = [
     EyesImage10,
     EyesImage11,
     EyesImage12,
+    EyesImage13,
+    EyesImage14,
+    EyesImage15,
+    EyesImage16,
   ],
   [
     NoneImage,
@@ -197,6 +224,17 @@ export const ImageItem = [
     MouthImage9,
     MouthImage10,
     MouthImage11,
+    MouthImage12,
+    MouthImage13,
+    MouthImage14,
+    MouthImage15,
+    MouthImage16,
+    MouthImage17,
+    MouthImage18,
+    MouthImage19,
+    MouthImage20,
+    MouthImage21,
+    MouthImage22,
   ],
   [
     NoneImage,
@@ -221,6 +259,14 @@ export const ImageItem = [
     HeadDressImage10,
     HeadDressImage11,
     HeadDressImage12,
+    HeadDressImage13,
+    HeadDressImage14,
+    HeadDressImage15,
+    HeadDressImage16,
+    HeadDressImage17,
+    HeadDressImage18,
+    HeadDressImage19,
+    HeadDressImage20,
   ],
   [
     NoneImage,
@@ -240,6 +286,11 @@ export const ImageItem = [
     HandDressImage14,
     HandDressImage15,
     HandDressImage16,
+    HandDressImage17,
+    HandDressImage18,
+    HandDressImage19,
+    HandDressImage20,
+    HandDressImage21,
   ],
   [
     NoneImage,
@@ -276,6 +327,7 @@ export const ImageItem = [
     ClothesImage31,
     ClothesImage32,
     ClothesImage33,
+    ClothesImage34,
   ],
   [
     NoneImage,
@@ -318,11 +370,5 @@ export const ImageItem = [
     BackgroundImage15,
     BackgroundImage16,
     BackgroundImage17,
-    BackgroundImage18,
-    BackgroundImage19,
-    BackgroundImage20,
-    BackgroundImage21,
-    BackgroundImage22,
-    BackgroundImage23,
   ],
 ];
