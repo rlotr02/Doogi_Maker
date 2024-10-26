@@ -1,8 +1,8 @@
 import * as S from '@/styles/ImageContainerStyle';
 import GithubIcon from '@icons/github.svg?react';
 import InstagramIcon from '@icons/instagram.svg?react';
-import HomeIcon from '@icons/home.svg?react';
-import LinkIcon from '@icons/link.svg?react';
+import DeveloperIcon from '@icons/developer.svg?react';
+import HeartIcon from '@icons/heart.svg?react';
 import DownloadIcon from '@icons/download.svg?react';
 import { TSelectedImage } from '@/types/ImageType';
 import { ImageItem } from '@/constants/ImageItem';
@@ -77,18 +77,20 @@ const ImageContainer = ({
       </S.ImageWrap>
       <S.RightWrap>
         <S.IconWrap>
-          <HomeIcon
-            onClick={() =>
-              window.open('https://www.instagram.com/doogi_official')
-            }
-          />
           <GithubIcon
             onClick={() => window.open('https://github.com/rlotr02')}
           />
           <InstagramIcon
-            onClick={() => window.open('https://www.instagram.com/rlotr.dev')}
+            onClick={() =>
+              window.open('https://www.instagram.com/doogi_official')
+            }
           />
-          <LinkIcon onClick={() => window.open('https://litt.ly/rlotr02')} />
+          <DeveloperIcon
+            onClick={() => window.open('https://litt.ly/rlotr02')}
+          />
+          <HeartIcon
+            onClick={() => window.open('https://litt.ly/doofficial')}
+          />
         </S.IconWrap>
         <DownloadIcon
           style={{ marginBottom: 3, cursor: 'pointer' }}

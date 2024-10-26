@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   padding-bottom: 5px;
   padding-left: 20px;
-  gap: 20px;
+  gap: 18px;
 `;
 
 export const ImageWrap = styled.div`
@@ -35,5 +35,5 @@ export const RightWrap = styled.div`
 export const IconWrap = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 9px;
 `;
