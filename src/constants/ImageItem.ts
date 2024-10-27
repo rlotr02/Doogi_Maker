@@ -1,17 +1,4 @@
-import NoneImage from '@images/parts/None.png';
-
-import BodyImage1 from '@images/parts/body/1.png';
-import BodyImage2 from '@images/parts/body/2.png';
-import BodyImage3 from '@images/parts/body/3.png';
-import BodyImage4 from '@images/parts/body/4.png';
-import BodyImage5 from '@images/parts/body/5.png';
-import BodyImage6 from '@images/parts/body/6.png';
-import BodyImage7 from '@images/parts/body/7.png';
-import BodyImage8 from '@images/parts/body/8.png';
-import BodyImage9 from '@images/parts/body/9.png';
-import BodyImage10 from '@images/parts/body/10.png';
-import BodyImage11 from '@images/parts/body/11.png';
-import BodyImage12 from '@images/parts/body/12.png';
+import NoneImage from '@images/parts/none.png';
 
 import EyesImage1 from '@images/parts/eyes/1.png';
 import EyesImage2 from '@images/parts/eyes/2.png';
@@ -177,21 +164,6 @@ import BackgroundImage16 from '@images/parts/background/16.png';
 import BackgroundImage17 from '@images/parts/background/17.png';
 
 export const ImageItem = [
-  [
-    NoneImage,
-    BodyImage1,
-    BodyImage2,
-    BodyImage3,
-    BodyImage4,
-    BodyImage5,
-    BodyImage6,
-    BodyImage7,
-    BodyImage8,
-    BodyImage9,
-    BodyImage10,
-    BodyImage11,
-    BodyImage12,
-  ],
   [
     NoneImage,
     EyesImage1,

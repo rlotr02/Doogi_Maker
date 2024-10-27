@@ -1,42 +1,52 @@
 import * as S from '@/styles/ImageContainerStyle';
-import GithubIcon from '@icons/github.svg?react';
-import InstagramIcon from '@icons/instagram.svg?react';
-import DeveloperIcon from '@icons/developer.svg?react';
-import HeartIcon from '@icons/heart.svg?react';
-import DownloadIcon from '@icons/download.svg?react';
+import GithubIcon from '@assets/icons/github.svg?react';
+import InstagramIcon from '@assets/icons/instagram.svg?react';
+import DeveloperIcon from '@assets/icons/developer.svg?react';
+import HeartIcon from '@assets/icons/heart.svg?react';
+import DownloadIcon from '@assets/icons/download.svg?react';
 import { TSelectedImage } from '@/types/ImageType';
 import { ImageItem } from '@/constants/ImageItem';
 import { useRef } from 'react';
+import BodyImage from '@images/parts/Body.svg?react';
+import { renderToStaticMarkup } from 'react-dom/server';
 
 const ImageContainer = ({
   selectedImage,
+  bodyColor,
 }: {
   selectedImage: TSelectedImage;
+  bodyColor: string;
 }) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   const images = [
-    ImageItem[8][selectedImage.background],
-    ImageItem[0][selectedImage.body],
-    ImageItem[1][selectedImage.eyes],
-    ImageItem[3][selectedImage.faceDress],
-    ImageItem[2][selectedImage.mouth],
-    ImageItem[7][selectedImage.shoes],
-    ImageItem[6][selectedImage.clothes],
-    ImageItem[4][selectedImage.headDress],
-    ImageItem[5][selectedImage.handDress],
+    ImageItem[0][selectedImage.eyes],
+    ImageItem[2][selectedImage.faceDress],
+    ImageItem[1][selectedImage.mouth],
+    ImageItem[6][selectedImage.shoes],
+    ImageItem[5][selectedImage.clothes],
+    ImageItem[3][selectedImage.headDress],
+    ImageItem[4][selectedImage.handDress],
   ];
 
-  //이미지 다운로드
+  const background = ImageItem[7][selectedImage.background];
+
   const handleDownload = async () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
+    if (!ctx) return;
 
     canvas.width = 1000;
     canvas.height = 1000;
 
-    const loadImages = images.map(src => {
+    // svg 파일 data URI로 변환
+    const bodySvgString = encodeURIComponent(
+      renderToStaticMarkup(<BodyImage color={bodyColor} />),
+    );
+    const bodyDataUri = `data:image/svg+xml;charset=utf-8,${bodySvgString}`;
+
+    const loadImages = [background, bodyDataUri, ...images].map(src => {
       return new Promise<HTMLImageElement>((resolve, reject) => {
         const img = new Image();
         img.src = src;
@@ -71,9 +81,11 @@ const ImageContainer = ({
   return (
     <S.Container>
       <S.ImageWrap>
-        {images.map((data, index) => {
-          return <img src={data} key={index} />;
-        })}
+        <img src={background} />
+        <BodyImage color={bodyColor} />
+        {images.map((data, index) => (
+          <img src={data} key={index} />
+        ))}
       </S.ImageWrap>
       <S.RightWrap>
         <S.IconWrap>

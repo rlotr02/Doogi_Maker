@@ -24,6 +24,7 @@ const App = () => {
     shoes: 0,
     background: 0,
   });
+  const [bodyColor, setBodyColor] = useState('#AFB8D7');
 
   useEffect(() => {
     const preloadImages = () => {
@@ -56,12 +57,17 @@ const App = () => {
           </div>
           <div className="main-wrapper">
             <Header />
-            <ImageContainer selectedImage={selectedImage} />
+            <ImageContainer
+              selectedImage={selectedImage}
+              bodyColor={bodyColor}
+            />
             <Tap selectedBar={selectedBar} setSelectedBar={setSelectedBar} />
             <TapContainer
               selectedBar={selectedBar}
               selectedImage={selectedImage}
               setSelectedImage={setSelectedImage}
+              bodyColor={bodyColor}
+              setBodyColor={setBodyColor}
             />
           </div>
           <div className="ad-wrapper">
