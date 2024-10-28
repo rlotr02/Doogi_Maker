@@ -11,20 +11,6 @@ export const Container = styled.div`
   margin: 8px 15px 15px;
 `;
 
-export const BodyWrap = styled.div`
-  width: 50%;
-  height: 50%;
-  aspect-ratio: 1;
-  border: 2px solid var(--Icon);
-  border-radius: 10px;
-
-  svg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-`;
-
 export const ImageContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
