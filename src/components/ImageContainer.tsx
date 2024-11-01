@@ -7,7 +7,7 @@ import DownloadIcon from '@assets/icons/download.svg?react';
 import { TSelectedImage } from '@/types/ImageType';
 import { ImageItem } from '@/constants/ImageItem';
 import { useRef } from 'react';
-import BodyImage from '@images/parts/Body.svg?react';
+import BodyImage from '@images/parts/body.svg?react';
 import { renderToStaticMarkup } from 'react-dom/server';
 
 const ImageContainer = ({
